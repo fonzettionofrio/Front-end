@@ -89,7 +89,7 @@ function ElencoClienti() {
                                                 </button>
                                             </div>
                                             <div className="modal fade" id={`deleteClienteModal-${cl.cliente.id}`} tabIndex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                                                <EliminaUsers role='cliente' user={cl} palestra={user.infoUtente} />
+                                                <EliminaUsers role='cliente' user={cl.cliente} palestra={user.infoUtente} />
                                             </div>
                                         </div>
                                     </div>
