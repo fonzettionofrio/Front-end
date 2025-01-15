@@ -15,7 +15,7 @@ function ChatBoxAI() {
             <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
             <script defer>
             window.botpress.init({
-            "botId": "ea796e92-530d-4dd1-99c5-a5c26ac7da6b",
+            "botId": "29ec8e69-92a8-4ce1-9e7b-87f4f368f201",
             "configuration": {
                 "botName": "FlexiFitBot",
                 "botDescription": "Benvenuto, sono il Chatbox AI di FlexiFit, come posso aiutarti 💪🏻💪🏻💪🏻💪🏻 ? (Digitare e inviare un carattere per attivare il bot)",
@@ -32,7 +32,7 @@ function ChatBoxAI() {
                 "enableOpenOnLoad": true,
                 "allowFileUpload": true
                 },
-             "clientId": "bc6170ad-01f2-41b2-8bb9-5197298a0372"
+             "clientId": "3557fc7d-4691-4e39-9d5d-f2c94763c9a7"
     });
                 </script>
             </body>
