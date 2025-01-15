@@ -1,0 +1,278 @@
+/*colore della navBar*/
+.navbarColore {
+    /*colore della navBar*/
+    background-color: transparent;
+}
+
+/* Container per dividere gli elementi */
+.container_home {
+    display: flex;
+    /* Trasforma il contenitore in un contenitore flexbox, permettendo la gestione dei figli in un layout flessibile */
+    justify-content: space-between;
+    /* Distribuisce gli elementi figli lungo l'asse orizzontale, lasciando spazio uguale tra di essi */
+    align-items: center;
+    /* Allinea gli elementi figli lungo l'asse verticale, centrando il loro contenuto */
+    padding: 1rem;
+    /* Aggiunge un'imbottitura interna al contenitore di 1 rem su tutti i lati */
+}
+
+/* Container per inserire gli elementi a sinistra */
+.left_home {
+    flex: 1;
+    /* Assegna all'elemento uno spazio flessibile, permettendogli di occupare una porzione uguale rispetto ad altri elementi flessibili nello stesso contenitore */
+    text-align: left;
+    /* Allinea il contenuto del testo a sinistra */
+    padding: 0.5rem;
+    /* Aggiunge un'imbottitura interna di 0.5 rem su tutti i lati */
+}
+
+/* Container per inserire gli elementi a destra*/
+.right_home {
+    flex: 1;
+    /* Assegna all'elemento uno spazio flessibile uguale a quello di .left_home, mantenendo un layout equilibrato */
+    text-align: right;
+    /* Allinea il contenuto del testo a destra */
+    padding: 0.5rem;
+    /* Aggiunge un'imbottitura interna di 0.5 rem su tutti i lati */
+}
+
+/*grandezza immagine*/
+.imm {
+    /*larghezza immagine*/
+    width: 80%;
+    /*altezza immagine*/
+    height: 80%;
+}
+
+/* Contenitore principale del logo */
+.logo {
+    display: flex;
+    /* Imposta il contenitore come un elemento flessibile, consentendo la gestione dei figli con il modello di layout Flexbox */
+    font-family: 'Arial', sans-serif;
+    /* Specifica il font primario come Arial, con un fallback generico sans-serif in caso Arial non sia disponibile */
+    font-size: 100px;
+    /* Imposta una dimensione del testo molto grande, ideale per titoli o elementi importanti */
+    font-weight: 900;
+    /* Imposta lo spessore massimo del testo, rendendolo molto spesso e visibile */
+    text-transform: uppercase;
+    /* Trasforma tutto il testo in maiuscolo */
+    color: white;
+    /* Colora il testo di bianco */
+    padding: 1rem;
+    /* Aggiunge uno spazio interno di 1 rem su tutti i lati */
+    width: fit-content;
+    /* La larghezza del contenitore si adatta automaticamente al contenuto, senza riempire l'intero contenitore genitore */
+}
+
+/* Testo con outline */
+.logo .outline {
+    -webkit-text-stroke: 2px white;
+    /* Contorno bianco */
+    color: transparent;
+    /* Rende il testo "vuoto" */
+}
+
+/* Testo pieno (senza contorno) */
+.logo .solid {
+    color: white;
+    /* Colore pieno bianco */
+}
+
+/* dimensione  massima bottone*/
+.max_dim {
+    width: 100%;
+    height: 60px;
+}
+
+/*Container delle cards*/
+.cards-container {
+    display: flex;
+    /* Imposta il contenitore come un elemento flessibile, ideale per gestire un layout di card */
+    flex-wrap: wrap;
+    /* Permette agli elementi figli (le card) di andare a capo se lo spazio orizzontale disponibile non è sufficiente */
+    justify-content: center;
+    /* Allinea orizzontalmente le card al centro del contenitore */
+    gap: 20px;
+    /* Definisce uno spazio di 20px tra le card sia orizzontalmente che verticalmente */
+    padding: 10px;
+    /* Aggiunge uno spazio interno di 10px intorno al contenitore, creando margine tra il contenitore e i suoi bordi */
+}
+
+/*CSS Single Card*/
+.single_card {
+    background-color: white;
+    /*background colore*/
+    padding: 20px;
+    /* Ogni card occupa il 25% dello spazio disponibile con margini */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Aggiunge ombra alle card */
+    border-radius: 8px;
+    /* Arrotonda i bordi */
+    width: 25%;
+    margin: 10px;
+}
+
+/*centra il testo*/
+.space {
+    text-align: center;
+}
+
+/*CSS per il body*/
+body {
+    background-image: url('../src/img/gradient.png');
+    /*mette l'immagine come sfondo*/
+    background-attachment: fixed;
+    /*fissa il background*/
+}
+
+/*CSS per il calendario*/
+.calendar {
+    max-width: 100%;
+    /* Imposta la larghezza massima del calendario al 100% del contenitore genitore, garantendo che non ecceda */
+    max-height: 100%;
+    /* Imposta l'altezza massima al 100% del contenitore genitore, evitando che superi i limiti */
+    margin: 20px auto;
+    /* Aggiunge un margine verticale di 20px e centra l'elemento orizzontalmente grazie a `auto` */
+    padding: 20px;
+    /* Aggiunge uno spazio interno di 20px su tutti i lati, garantendo un distanziamento del contenuto dai bordi */
+    background-color: #f8f9fa;
+    /* Colore di sfondo chiaro per il calendario, simile a un grigio molto tenue */
+    border-radius: 8px;
+    /* Applica angoli arrotondati di 8px per un aspetto più morbido e moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aggiunge un'ombra sottile per creare un effetto di elevazione e profondità */
+    font-family: Arial, sans-serif;
+    /* Imposta il font del calendario come Arial, con un fallback generico sans-serif */
+}
+
+/*Intestazione del calendario*/
+.calendar-header {
+    display: flex;
+    /* Imposta il contenitore come un elemento flessibile, ideale per organizzare gli elementi del titolo del calendario */
+    justify-content: space-between;
+    /* Distribuisce gli elementi figli lungo l'asse orizzontale con lo stesso spazio tra di essi */
+    align-items: center;
+    /* Allinea verticalmente gli elementi figli al centro del contenitore */
+    margin-bottom: 20px;
+    /* Aggiunge uno spazio inferiore di 20px per separare l'intestazione dal contenuto sottostante */
+}
+
+/*bottone per l'intestazione del calendario dei messaggi*/
+.calendar-header button {
+    background-color: #ffc107;
+    /* Imposta un colore di sfondo giallo acceso (#ffc107), che attira l'attenzione e si adatta bene al tema di un calendario */
+    color: black;
+    /* Imposta il colore del testo in nero, garantendo un buon contrasto e leggibilità sullo sfondo giallo */
+    border: none;
+    /* Rimuove qualsiasi bordo predefinito, rendendo il pulsante più pulito e moderno */
+    padding: 8px 12px;
+    /* Aggiunge imbottitura interna: 8px verticalmente e 12px orizzontalmente, per un pulsante ben dimensionato e comodo da cliccare */
+    border-radius: 4px;
+    /* Arrotonda leggermente gli angoli del pulsante, migliorando l'estetica e dando un aspetto più morbido */
+    cursor: pointer;
+    /* Cambia il cursore in una mano quando l'utente passa sopra il pulsante, indicando che è cliccabile */
+}
+
+/*CSS per il bottone quando il cursore passa*/
+.calendar-header button:hover {
+    background-color: #ffc107;
+}
+
+/*CSS per l'h4 con classe calendar-header*/
+.calendar-header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/*CSS per i giorni del calendario*/
+.calendar-days-header {
+    display: grid;
+    /* Imposta il contenitore come un elemento grid, permettendo di disporre gli elementi (i giorni della settimana) in una griglia */
+    font-size: 20px;
+    /* Imposta una dimensione del testo di 20px, rendendo i giorni della settimana facilmente leggibili */
+    grid-template-columns: repeat(7, 1fr);
+    /* Definisce una griglia con 7 colonne (una per ogni giorno della settimana), ciascuna con larghezza uguale (1 frazione dello spazio disponibile) */
+    text-align: center;
+    /* Allinea il testo dei giorni della settimana al centro di ogni cella della griglia */
+    font-weight: bold;
+    /* Imposta il peso del font a grassetto, rendendo i giorni della settimana più evidenti e facilmente leggibili */
+    margin-bottom: 10px;
+    /* Aggiunge uno spazio di 10px sotto l'intestazione dei giorni della settimana per separarla dal corpo del calendario */
+}
+
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+/*CSS per i giorni validi del calendario*/
+.day-cell {
+    height: 50px;
+    /* Imposta l'altezza della cella a 50px, creando delle righe di dimensioni uniformi per i giorni del calendario */
+    display: flex;
+    /* Imposta la cella come un elemento flessibile, per permettere un facile allineamento del contenuto (ad esempio il numero del giorno) */
+    align-items: center;
+    /* Allinea verticalmente il contenuto della cella (es. il numero del giorno) al centro */
+    justify-content: center;
+    /* Allinea orizzontalmente il contenuto della cella (es. il numero del giorno) al centro */
+    background-color: #ffffff;
+    /* Imposta il colore di sfondo della cella a bianco, per un aspetto pulito e neutro */
+    border: 1px solid #dee2e6;
+    /* Applica un bordo di 1px di spessore, con una linea solida e un colore grigio chiaro (#dee2e6), per separare visivamente le celle */
+    border-radius: 4px;
+    /* Arrotonda leggermente gli angoli della cella di 4px, per un aspetto più morbido e moderno */
+}
+
+/*CSS per bottoni */
+.empty-cell {
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+/*CSS per la domenica*/
+.sunday-cell {
+    height: 50px;
+    /* Imposta l'altezza della cella a 50px, creando delle righe di dimensioni uniformi per i giorni del calendario */
+    display: flex;
+    /* Imposta la cella come un elemento flessibile, per permettere un facile allineamento del contenuto (ad esempio il numero del giorno) */
+    align-items: center;
+    /* Allinea verticalmente il contenuto della cella (es. il numero del giorno) al centro */
+    justify-content: center;
+    /* Allinea orizzontalmente il contenuto della cella (es. il numero del giorno) al centro */
+    background-color: #ffffff;
+    /* Imposta il colore di sfondo della cella a bianco, per un aspetto pulito e neutro */
+    border: 1px solid #dee2e6;
+    /* Applica un bordo di 1px di spessore, con una linea solida e un colore grigio chiaro (#dee2e6), per separare visivamente le celle */
+    border-radius: 4px;
+    /* Arrotonda leggermente gli angoli della cella di 4px, per un aspetto più morbido e moderno */
+}
+
+
+/*CSS per il bottone dei giorni validi del calendario*/
+.btn_day {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    /* Applica un bordo di 1px di spessore, con una linea solida e un colore di bordo #dee2e6 (un grigio chiaro) */
+}
+
+/*CSS per il bottone delle domeniche del calendario*/
+.btn_sun {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-color: red;
+    color: red;
+}
+
+/*CSS per il bottone dei giorni passati del calendario*/
+.btn_past {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-color: #dee2e6;
+    color: grey;
+}
