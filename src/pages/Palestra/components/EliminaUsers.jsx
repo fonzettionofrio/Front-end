@@ -63,7 +63,7 @@ function EliminaUsers({ user, role, palestra }) {
         } else {
             console.log(user)
             // "Elimina" il cliente aggiungendo nel campo "palestra rimozione" l'id della palestra
-            fetch(`http://localhost:1337/api/clientes/${user.cliente.documentId}`, {
+            fetch(`http://localhost:1337/api/clientes/${user.documentId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
